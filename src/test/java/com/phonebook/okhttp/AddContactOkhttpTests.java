@@ -46,6 +46,8 @@ public class AddContactOkhttpTests extends TestBase {
         String message = responseMessageDto.getMessage();
         System.out.println(message);
 
+        Assert.assertTrue(message.contains("Contact was added!"));
+
     }
 
 }
